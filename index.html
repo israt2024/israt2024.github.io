@@ -1,261 +1,759 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Israt Jahan — Portfolio</title>
 
-    <meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Israt Jahan | Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <header>
+<!-- ===== ANIMATED BACKGROUND SHAPES ===== -->
+<div class="bg-shapes" id="bgShapes" aria-hidden="true">
+  <span class="shape shape-mint"></span>
+  <span class="shape shape-coral"></span>
+  <span class="shape shape-mint-2"></span>
+</div>
 
-    <nav>
-
-        <div class="logo">Israt Jahan</div>
-
-        <ul>
-
-            <li><a href="#home">Home</a></li>
-
-            <li><a href="#about">About</a></li>
-
-            <li><a href="#education">Education</a></li>
-
-            <li><a href="#skills">Skills</a></li>
-
-            <li><a href="#projects">Projects</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-
-        </ul>
-
-    </nav>
-
+<header class="nav">
+  <a href="#home" class="nav-logo">Israt<span class="dot">.</span>Jahan</a>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#activities">Activities</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact" class="nav-cta">Get in touch</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+    <span></span><span></span><span></span>
+  </button>
 </header>
-<section class="hero" id="home">
 
-   <img src="images/profile.jpg" alt="Israt Jahan">
-
-    <h1>Hi, I'm</h1>
-
-    <h2>Israt Jahan</h2>
-
-    <h3>Computer Science & Engineering Student</h3>
-
-    <p>
-        Bangladesh University of Professionals (BUP)
-    </p>
-
-    <a href="files/cv.pdf">Download CV</a>
-
-</section>
-<section id="about">
-
-    <h2>About Me</h2>
-
-    <p>
-        I am Israt Jahan, a passionate Computer Science and Engineering student at Bangladesh University of Professionals (BUP). I enjoy learning new technologies and continuously improving my programming and problem-solving skills.
-    </p>
-
-    <p>
-        Currently, I am learning C, C++, Java, Python, HTML, CSS, MySQL, and MongoDB. I also work with Canva, Figma, Git, GitHub, and AI tools using effective prompt engineering techniques.
-    </p>
-
-</section>
-<section id="education">
-
-    <h2>Education</h2>
-
-    <div class="card">
-
-    <h3>Bangladesh University of Professionals (BUP)</h3>
-
-    <p>Department: Computer Science & Engineering</p>
-
-    <p>Current Status: 3rd Year | 2nd Semester</p>
-
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#activities">Activities</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#contact" class="mobile-menu-cta">Get in touch</a>
 </div>
-
-    <br>
-
-    <h3>Higher Secondary Certificate (HSC)</h3>
-
-    <p>Cantonment Public School and College, Mymensingh (CPSCM)</p>
-
-    <p>Year: 2022</p>
-
-    <p>Result: GPA 5.00</p>
-
-    <br>
-
-    <h3>Secondary School Certificate (SSC)</h3>
-
-    <p>Cantonment Public School and College, Mymensingh (CPSCM)</p>
-
-    <p>Year: 2020</p>
-
-    <p>Result: GPA 5.00</p>
-
-</section>
-<section id="skills">
-
-    <h2>Skills</h2>
-
-    <ul>
-
-        <li>C</li>
-
-        <li>C++</li>
-
-        <li>Java</li>
-
-        <li>Python</li>
-
-        <li>HTML</li>
-
-        <li>CSS</li>
-
-        <li>JavaScript</li>
-
-        <li>MySQL</li>
-
-        <li>MongoDB</li>
-
-        <li>Git</li>
-
-        <li>GitHub</li>
-
-        <li>Canva</li>
-
-        <li>Figma</li>
-
-        <li>Microsoft Office</li>
-
-        <li>Prompt Engineering</li>
-
-    </ul>
-
-</section>
-<section id="projects">
-
-<h2>Projects</h2>
-
-
-<div class="project-container">
-
-
-<div class="project-card">
-
-<h3>ERP Management System</h3>
-
-<p>
-A complete management system designed to handle business operations efficiently.
-</p>
-
-<a href="#">
-View Project
-</a>
-
-</div>
-
-
-
-
-<div class="project-card">
-
-<h3>Airline Booking System</h3>
-
-<p>
-A Java based airline booking system with seat management and optimized booking features.
-</p>
-
-<a href="#">
-View Project
-</a>
-
-</div>
-
-
-
-
-
-<div class="project-card">
-
-<h3>Personal Portfolio Website</h3>
-
-<p>
-A responsive portfolio website built using HTML, CSS and JavaScript.
-</p>
-
-<a href="#">
-View Project
-</a>
-
-</div>
-
-
-</div>
-
-
-</section>
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-
-<div class="contact-card">
-
-
-<p>
-📧 Email:
-<br>
-israt262cpscm@gmail.com
-</p>
-
-
-
-<p>
-📍 Location:
-<br>
-Bangladesh
-</p>
-
-
-
-<p>
-💻 GitHub:
-<br>
-Coming Soon
-</p>
-
-
-
-<p>
-🔗 LinkedIn:
-<br>
-Coming Soon
-</p>
-
-
-
-</div>
-
-
-</section>
-<footer>
-
-    <p>© 2026 Israt Jahan | All Rights Reserved.</p>
-
+<div class="mobile-menu-backdrop" id="mobileMenuBackdrop" hidden></div>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-copy">
+      <p class="eyebrow hero-in hero-in-1">// computer science &amp; engineering student</p>
+      <h1 class="hero-in hero-in-2">Code.<br>Create.<br>Keep learning.</h1>
+      <p class="hero-sub hero-in hero-in-3">I'm Israt Jahan, a Computer Science &amp; Engineering student at Bangladesh University of Professionals. I build projects, explore new technologies, and enjoy turning complex problems into simple, practical solutions.</p>
+      <div class="hero-actions hero-in hero-in-4">
+        <a href="files/Israt_B_3134_CV.pdf" class="btn btn-primary" download>Download CV</a>
+        <a href="#projects" class="btn btn-ghost">View projects</a>
+      </div>
+    </div>
+
+    <div class="hero-portrait">
+      <span class="hero-glow" aria-hidden="true"></span>
+      <img src="images/profileIJ.jpg" alt="Israt Jahan">
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats" id="stats" data-reveal>
+    <div class="stat" data-count="7">
+      <span class="stat-num"><span class="stat-num-value">0</span>+</span>
+      <span class="stat-label">Projects Built</span>
+    </div>
+    <div class="stat" data-count="25">
+      <span class="stat-num"><span class="stat-num-value">0</span>+</span>
+      <span class="stat-label">Tools &amp; Technologies</span>
+    </div>
+    <div class="stat" data-count="3">
+      <span class="stat-num"><span class="stat-num-value">0</span></span>
+      <span class="stat-label">IEEE Memberships</span>
+    </div>
+    <div class="stat" data-count="3">
+      <span class="stat-num">3<sup>rd</sup></span>
+      <span class="stat-label">Year, CSE</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+
+  <section class="section" id="about" data-reveal>
+    <div class="section-head">
+      <p class="section-index">01</p>
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>A little about me</h2>
+      </div>
+    </div>
+
+    <div class="about-single">
+      <p class="about-text">I'm a Computer Science and Engineering student at Bangladesh University of Professionals (BUP), currently in my 3rd year. I'm curious about how technology works behind the scenes and enjoy learning by building real projects. I like solving problems, experimenting with new ideas, and continuously improving the way I approach software development.</p>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION (timeline) ===== -->
+  <section class="section" id="education" data-reveal>
+    <div class="section-head">
+      <p class="section-index">02</p>
+      <div>
+        <p class="eyebrow">Education</p>
+        <h2>Where I've studied</h2>
+      </div>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">2023 — Present</p>
+          <h3>Bangladesh University of Professionals (BUP)</h3>
+          <p>B.Sc. in Computer Science &amp; Engineering — 3rd year, 2nd semester</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">2022</p>
+          <h3>Higher Secondary Certificate (HSC)</h3>
+          <p>Cantonment Public School and College, Mymensingh · GPA 5.00</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">2020</p>
+          <h3>Secondary School Certificate (SSC)</h3>
+          <p>Cantonment Public School and College, Mymensingh · GPA 5.00</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills" data-reveal>
+    <div class="section-head">
+      <p class="section-index">03</p>
+      <div>
+        <p class="eyebrow">Skills</p>
+        <h2>What I work with</h2>
+      </div>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <span class="skill-tag">01</span>
+        <h3>Languages</h3>
+        <div class="pill-row">
+          <span class="pill">C</span><span class="pill">C++</span><span class="pill">Java</span>
+          <span class="pill">Python</span><span class="pill">JavaScript</span><span class="pill">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-tag">02</span>
+        <h3>Web development</h3>
+        <div class="pill-row">
+          <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-tag">03</span>
+        <h3>Frameworks &amp; libraries</h3>
+        <div class="pill-row">
+          <span class="pill">React.js</span><span class="pill">Node.js</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-tag">04</span>
+        <h3>Database &amp; server</h3>
+        <div class="pill-row">
+          <span class="pill">MySQL</span><span class="pill">MongoDB</span><span class="pill">XAMPP</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-tag">05</span>
+        <h3>IDEs &amp; editors</h3>
+        <div class="pill-row">
+          <span class="pill">VS Code</span><span class="pill">IntelliJ IDEA</span><span class="pill">PyCharm</span>
+          <span class="pill">Apache NetBeans</span><span class="pill">Code::Blocks</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-tag">06</span>
+        <h3>Version control &amp; OS</h3>
+        <div class="pill-row">
+          <span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">Ubuntu / Linux</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-tag">07</span>
+        <h3>Design tools</h3>
+        <div class="pill-row">
+          <span class="pill">Figma</span><span class="pill">Canva</span><span class="pill">Gamma</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-tag">08</span>
+        <h3>Engineering &amp; simulation</h3>
+        <div class="pill-row">
+          <span class="pill">MATLAB</span><span class="pill">Cisco Packet Tracer</span>
+          <span class="pill">AutoCAD</span><span class="pill">TinkerCAD</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects" data-reveal>
+    <div class="section-head">
+      <p class="section-index">04</p>
+      <div>
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work</h2>
+      </div>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+        <p class="project-num">01</p>
+        <button class="project-title-btn" type="button" data-open-modal="compiler">Small Expression Compiler</button>
+        <div class="pill-row project-stack">
+          <span class="pill pill-sm">C</span><span class="pill pill-sm">Flex</span><span class="pill pill-sm">Bison</span>
+        </div>
+        <p>Lexical analysis, syntax parsing, semantic checking, and symbol table management for a small expression language.</p>
+        <button class="project-link-btn" type="button" data-open-modal="compiler">View project <span aria-hidden="true">→</span></button>
+      </article>
+
+      <article class="project-card">
+        <p class="project-num">02</p>
+        <button class="project-title-btn" type="button" data-open-modal="aeropass">AeroPass</button>
+        <div class="pill-row project-stack">
+          <span class="pill pill-sm">HTML</span><span class="pill pill-sm">CSS</span><span class="pill pill-sm">JavaScript</span><span class="pill pill-sm">Bellman-Ford</span><span class="pill pill-sm">Backtracking</span>
+        </div>
+        <p>A smart flight booking system using graph algorithms for route optimization and seat allocation.</p>
+        <button class="project-link-btn" type="button" data-open-modal="aeropass">View project <span aria-hidden="true">→</span></button>
+      </article>
+
+      <article class="project-card">
+        <p class="project-num">03</p>
+        <button class="project-title-btn" type="button" data-open-modal="erp">Company ERP System</button>
+        <div class="pill-row project-stack">
+          <span class="pill pill-sm">Java</span><span class="pill pill-sm">JavaFX</span><span class="pill pill-sm">MySQL</span><span class="pill pill-sm">Maven</span>
+        </div>
+        <p>A desktop-based ERP system covering employee, attendance, payroll, leave, and project management.</p>
+        <button class="project-link-btn" type="button" data-open-modal="erp">View project <span aria-hidden="true">→</span></button>
+      </article>
+
+      <article class="project-card">
+        <p class="project-num">04</p>
+        <div class="project-card-title-row">
+          <button class="project-title-btn" type="button" data-open-modal="projonmmo">PROJONMMO</button>
+          <span class="status-pill">Ongoing</span>
+        </div>
+        <div class="pill-row project-stack">
+          <span class="pill pill-sm">HTML</span><span class="pill pill-sm">CSS</span><span class="pill pill-sm">JavaScript</span><span class="pill pill-sm">Git</span><span class="pill pill-sm">GitHub</span>
+        </div>
+        <p>A student hostel management system — room allocation, meal tracking, payments, and entry/exit monitoring.</p>
+        <button class="project-link-btn" type="button" data-open-modal="projonmmo">View project <span aria-hidden="true">→</span></button>
+      </article>
+
+      <article class="project-card">
+        <p class="project-num">05</p>
+        <button class="project-title-btn" type="button" data-open-modal="lfr">LFR — Line Follower Robot</button>
+        <div class="pill-row project-stack">
+          <span class="pill pill-sm">Embedded C</span><span class="pill pill-sm">Sensors</span>
+        </div>
+        <p>A sensor-guided line-following robot, built as a hands-on introduction to embedded systems and hardware control.</p>
+        <button class="project-link-btn" type="button" data-open-modal="lfr">View project <span aria-hidden="true">→</span></button>
+      </article>
+
+      <article class="project-card">
+        <p class="project-num">06</p>
+        <button class="project-title-btn" type="button" data-open-modal="water">Water Level Detector</button>
+        <div class="pill-row project-stack">
+          <span class="pill pill-sm">Embedded C</span><span class="pill pill-sm">Electronics</span>
+        </div>
+        <p>A sensor-based circuit that detects and signals water level, built during 2nd semester coursework.</p>
+        <button class="project-link-btn" type="button" data-open-modal="water">View project <span aria-hidden="true">→</span></button>
+      </article>
+
+      <article class="project-card">
+        <p class="project-num">07</p>
+        <button class="project-title-btn" type="button" data-open-modal="passmgr">Password Manager</button>
+        <div class="pill-row project-stack">
+          <span class="pill pill-sm">Java</span><span class="pill pill-sm">OOP</span>
+        </div>
+        <p>An object-oriented password manager focused on secure credential storage and clean class design.</p>
+        <button class="project-link-btn" type="button" data-open-modal="passmgr">View project <span aria-hidden="true">→</span></button>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== CO-CURRICULAR ACTIVITIES ===== -->
+  <section class="section" id="activities" data-reveal>
+    <div class="section-head">
+      <p class="section-index">05</p>
+      <div>
+        <p class="eyebrow">Activities</p>
+        <h2>Where I contribute</h2>
+      </div>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">Nov 2025 — Present</p>
+          <h3>IEEE BUP Student Branch</h3>
+          <p>General Member</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">Nov 2025 — Present</p>
+          <h3>IEEE Computer Society, BUP Student Branch Chapter</h3>
+          <p>General Member</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">Nov 2025 — Present</p>
+          <h3>IEEE BUP Student Branch — Women in Engineering (WIE)</h3>
+          <p>General Member</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== HOBBIES ===== -->
+  <section class="section" id="hobbies" data-reveal>
+    <div class="section-head">
+      <p class="section-index">06</p>
+      <div>
+        <p class="eyebrow">Hobbies</p>
+        <h2>Outside of code</h2>
+      </div>
+    </div>
+
+    <div class="pill-row">
+      <span class="pill">Gardening</span>
+    </div>
+    <p class="section-sub" style="margin-top:16px;"></p>
+  </section>
+
+  <!-- ===== CONTACT / REQUEST FORM (fillable) ===== -->
+  <section class="section" id="contact" data-reveal>
+    <div class="section-head">
+      <p class="section-index">07</p>
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let's work together</h2>
+        <p class="section-sub">Have an internship, project, or just want to say hi? Send a message and I'll get back to you.</p>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/xrpzpwob" method="POST">
+        <div class="field-row">
+          <div class="field">
+            <label for="cName">Name</label>
+            <input type="text" id="cName" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="field">
+            <label for="cEmail">Email</label>
+            <input type="email" id="cEmail" name="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="cReason">What's this about?</label>
+          <select id="cReason" name="reason">
+            <option>Internship opportunity</option>
+            <option>Freelance / project work</option>
+            <option>Collaboration</option>
+            <option>Just saying hi</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="cMessage">Message</label>
+          <textarea id="cMessage" name="message" rows="5" placeholder="Tell me a bit more..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="contactSubmitBtn">Send message</button>
+        <p class="form-note" id="formNote">Sends straight to my inbox.</p>
+      </form>
+
+      <div class="contact-side">
+
+        <a href="mailto:israt262cpscm@gmail.com" class="contact-link">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 6.5l9 6.5 9-6.5"/></svg>
+          </span>
+          <span class="contact-text">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">israt262cpscm@gmail.com</span>
+          </span>
+        </a>
+
+        <a href="https://github.com/isratjahan" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+          </span>
+          <span class="contact-text">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/isratjahan</span>
+          </span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/israt-jahan-b66b86427/" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM.5 8.98h8.96V23.5H.5V8.98Zm14.75-.28c-2.28 0-3.63 1.24-4.22 2.13V8.98H2.07V23.5h8.96v-8.1c0-2.14 1.31-3.13 2.98-3.13 1.62 0 2.86 1.07 2.86 3.17v8.06h8.96v-8.96c0-5.24-2.8-7.7-6.63-7.7Z" transform="translate(-2.07)"/></svg>
+          </span>
+          <span class="contact-text">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">israt-jahan</span>
+          </span>
+        </a>
+
+        <div class="contact-link contact-static">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          </span>
+          <span class="contact-text">
+            <span class="contact-label">Based in</span>
+            <span class="contact-value">Bangladesh</span>
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Israt Jahan. All rights reserved.</p>
 </footer>
-</body>
 
+<!-- ===== QUICK CONTACT DOCK ===== -->
+<div class="dock" aria-label="Quick contact links">
+  <a href="mailto:israt262cpscm@gmail.com" class="dock-link" title="Email" aria-label="Email">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 6.5l9 6.5 9-6.5"/></svg>
+  </a>
+  <a href="https://github.com/isratjahan" target="_blank" rel="noopener" class="dock-link" title="GitHub" aria-label="GitHub">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+  </a>
+  <a href="https://www.linkedin.com/in/israt-jahan-b66b86427/" target="_blank" rel="noopener" class="dock-link" title="LinkedIn" aria-label="LinkedIn">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM.5 8.98h8.96V23.5H.5V8.98Zm14.75-.28c-2.28 0-3.63 1.24-4.22 2.13V8.98H2.07V23.5h8.96v-8.1c0-2.14 1.31-3.13 2.98-3.13 1.62 0 2.86 1.07 2.86 3.17v8.06h8.96v-8.96c0-5.24-2.8-7.7-6.63-7.7Z" transform="translate(-2.07)"/></svg>
+  </a>
+</div>
+
+<!-- ===== PROJECT DETAIL MODAL ===== -->
+<div class="modal-overlay" id="projectModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Close">×</button>
+    <p class="project-num" id="modalNum"></p>
+    <h3 id="modalTitle"></h3>
+    <div class="pill-row" id="modalStack"></div>
+    <p id="modalDesc"></p>
+    <a href="#" id="modalGithub" target="_blank" rel="noopener" class="btn btn-primary">View on GitHub <span aria-hidden="true">→</span></a>
+    <p id="modalNoLink" class="form-note">No public repository yet.</p>
+  </div>
+</div>
+
+<script>
+  (function(){
+    const form = document.getElementById('contactForm');
+    const note = document.getElementById('formNote');
+    const submitBtn = document.getElementById('contactSubmitBtn');
+    const defaultNote = note.textContent;
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+      note.textContent = 'Sending your message...';
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function(response){
+        if (response.ok){
+          form.reset();
+          note.textContent = 'Thanks — your message is on its way. I\'ll get back to you soon.';
+        } else {
+          note.textContent = 'Something went wrong sending that — please try again or email me directly.';
+        }
+      }).catch(function(){
+        note.textContent = 'Something went wrong sending that — please try again or email me directly.';
+      }).finally(function(){
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send message';
+        setTimeout(function(){ note.textContent = defaultNote; }, 6000);
+      });
+    });
+  })();
+
+  /* ---- Hamburger / mobile menu ---- */
+  (function(){
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('mobileMenu');
+    const backdrop = document.getElementById('mobileMenuBackdrop');
+    let menuOpen = false;
+
+    function openMenu(){
+      menuOpen = true;
+      menu.hidden = false;
+      backdrop.hidden = false;
+      requestAnimationFrame(() => {
+        menu.classList.add('open');
+        backdrop.classList.add('open');
+      });
+      toggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu(){
+      menuOpen = false;
+      menu.classList.remove('open');
+      backdrop.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+      setTimeout(() => { menu.hidden = true; backdrop.hidden = true; }, 320);
+    }
+
+    toggle.addEventListener('click', () => { menuOpen ? closeMenu() : openMenu(); });
+    backdrop.addEventListener('click', closeMenu);
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && menuOpen) closeMenu(); });
+    window.addEventListener('resize', () => { if (menuOpen && window.innerWidth > 780) closeMenu(); });
+  })();
+
+  /* ---- Animated gradient background shapes ---- */
+  (function(){
+    const shapes = document.querySelectorAll('.bg-shapes .shape');
+    if (!shapes.length) return;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduceMotion) return;
+
+    const configs = Array.from(shapes).map((el, i) => ({
+      el,
+      speed: 0.00018 + i * 0.00006,
+      radiusX: 90 + i * 40,
+      radiusY: 60 + i * 30,
+      phase: i * 2.1
+    }));
+
+    function animate(time){
+      configs.forEach(cfg => {
+        const t = time * cfg.speed + cfg.phase;
+        const x = Math.sin(t) * cfg.radiusX;
+        const y = Math.cos(t * 0.8) * cfg.radiusY;
+        cfg.el.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px)`;
+      });
+      requestAnimationFrame(animate);
+    }
+    requestAnimationFrame(animate);
+  })();
+
+  /* ---- Stats counter ---- */
+  (function(){
+    const statsSection = document.getElementById('stats');
+    if (!statsSection) return;
+    const stats = statsSection.querySelectorAll('.stat[data-count]');
+
+    function runCount(el){
+      const target = parseInt(el.dataset.count, 10);
+      const valueEl = el.querySelector('.stat-num-value');
+      if (!valueEl || isNaN(target)) return;
+      const duration = 1100;
+      const start = performance.now();
+      function step(now){
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        valueEl.textContent = Math.round(eased * target);
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+
+    if ('IntersectionObserver' in window){
+      const statsIo = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting){
+            runCount(entry.target);
+            statsIo.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.4 });
+      stats.forEach(el => statsIo.observe(el));
+    } else {
+      stats.forEach(runCount);
+    }
+  })();
+
+  if ('IntersectionObserver' in window){
+    const els = document.querySelectorAll('[data-reveal]');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting){
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    els.forEach(el => io.observe(el));
+
+    /* staggered reveal for grid/list items */
+    const cardEls = document.querySelectorAll('.skill-card, .project-card, .timeline-item, .contact-link');
+    const cardIo = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting){
+          entry.target.classList.add('cv-in');
+          cardIo.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    cardEls.forEach(el => cardIo.observe(el));
+  } else {
+    document.querySelectorAll('[data-reveal]').forEach(el => el.classList.add('in-view'));
+    document.querySelectorAll('.skill-card, .project-card, .timeline-item, .contact-link').forEach(el => el.classList.add('cv-in'));
+  }
+
+  /* ---- Project modal ---- */
+  const projectData = {
+    compiler: {
+      num: '01',
+      title: 'Small Expression Compiler',
+      stack: ['C', 'Flex', 'Bison'],
+      desc: 'Developed a small expression compiler using C, Flex, and Bison with lexical analysis, syntax parsing, semantic checking, and symbol table management.',
+      github: 'https://github.com/israt2024/small-expression-compiler'
+    },
+    aeropass: {
+      num: '02',
+      title: 'AeroPass',
+      stack: ['HTML', 'CSS', 'JavaScript', 'Bellman-Ford', 'Backtracking'],
+      desc: 'Developed a smart flight booking system using Bellman-Ford and Backtracking algorithms for route optimization and seat allocation.',
+      github: 'https://github.com/israt2024/AeroPass'
+    },
+    erp: {
+      num: '03',
+      title: 'Company ERP System',
+      stack: ['Java', 'JavaFX', 'MySQL', 'Maven'],
+      desc: 'Developed a desktop-based ERP system using JavaFX and MySQL with employee, attendance, payroll, leave, and project management.',
+      github: 'https://github.com/israt2024/company-erp-system'
+    },
+    projonmmo: {
+      num: '04',
+      title: 'PROJONMMO — Student Hostel Management System',
+      stack: ['HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'],
+      desc: 'Developing a responsive Student Hostel Management System with student management, room allocation, meal tracking, payment management, and hostel entry/exit monitoring. Ongoing project.',
+      github: 'https://github.com/israt2024/Projonmmo'
+    },
+    lfr: {
+      num: '05',
+      title: 'LFR — Line Follower Robot',
+      stack: ['Embedded C', 'Sensors'],
+      desc: 'A sensor-guided line-following robot, built as a hands-on introduction to embedded systems and hardware control.',
+      github: null
+    },
+    water: {
+      num: '06',
+      title: 'Water Level Detector',
+      stack: ['Embedded C', 'Electronics'],
+      desc: 'A sensor-based circuit that detects and signals water level, built during 2nd semester coursework.',
+      github: null
+    },
+    passmgr: {
+      num: '07',
+      title: 'Password Manager',
+      stack: ['Java', 'OOP'],
+      desc: 'An object-oriented password manager focused on secure credential storage and clean class design.',
+      github: null
+    }
+  };
+
+  const modal = document.getElementById('projectModal');
+  const modalNum = document.getElementById('modalNum');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalStack = document.getElementById('modalStack');
+  const modalDesc = document.getElementById('modalDesc');
+  const modalGithub = document.getElementById('modalGithub');
+  const modalNoLink = document.getElementById('modalNoLink');
+  const modalClose = document.getElementById('modalClose');
+  let lastFocused = null;
+
+  function openModal(key){
+    const data = projectData[key];
+    if (!data) return;
+    modalNum.textContent = data.num;
+    modalTitle.textContent = data.title;
+    modalStack.innerHTML = data.stack.map(s => `<span class="pill pill-sm">${s}</span>`).join('');
+    modalDesc.textContent = data.desc;
+    if (data.github){
+      modalGithub.href = data.github;
+      modalGithub.hidden = false;
+      modalNoLink.hidden = true;
+    } else {
+      modalGithub.hidden = true;
+      modalNoLink.hidden = false;
+    }
+    lastFocused = document.activeElement;
+    modal.hidden = false;
+    requestAnimationFrame(() => modal.classList.add('open'));
+    modalClose.focus();
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal(){
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+    setTimeout(() => { modal.hidden = true; }, 200);
+    if (lastFocused) lastFocused.focus();
+  }
+
+  document.querySelectorAll('[data-open-modal]').forEach(btn => {
+    btn.addEventListener('click', () => openModal(btn.dataset.openModal));
+  });
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modal.hidden) closeModal(); });
+</script>
+
+</body>
 </html>
